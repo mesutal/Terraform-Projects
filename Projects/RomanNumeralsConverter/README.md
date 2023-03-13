@@ -1,0 +1,2 @@
+## This project includes the Terraform version of the application I previously wrote in AWS Cloudformation service.
+## Bu proje, önceden AWS Cloudformation servisinde yazdığım uygulamanın Terraform a çevrilmiş halini içerir.
