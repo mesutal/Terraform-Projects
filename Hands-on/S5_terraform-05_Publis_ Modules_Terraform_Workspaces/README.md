@@ -45,7 +45,7 @@ At the end of the this hands-on training, students will be able to;
 - Create a directory for modules to publish.
 
 ```bash
-cd && mkdir clarusway-modules && cd clarusway-modules && touch main.tf variables.tf outputs.tf versions.tf userdata.sh README.md .gitignore
+cd && mkdir example-modules && cd example-modules && touch main.tf variables.tf outputs.tf versions.tf userdata.sh README.md .gitignore
 ```
 
 - Go to the `versions.tf` and copy the latest provider version from the terraform documentaion (https://registry.terraform.io/providers/hashicorp/aws/latest/docs).
@@ -248,7 +248,7 @@ provider "aws" {
 
 module "docker_instance" {
     source = "<github-username>/docker-instance/aws"
-    key_name = "clarusway"
+    key_name = "example"
 }
 ```
 ---
@@ -307,8 +307,8 @@ provider "aws" {
 }
 
 module "docker-instance" {
-  source  = "clarusway/docker-instance/aws"
-  key_name = "clarusway"
+  source  = "example/docker-instance/aws"
+  key_name = "example"
 }
 ```
 

@@ -43,7 +43,7 @@ terraform {
 }
 
 locals {
-  mytag = "clarusway-local-name"
+  mytag = "example-local-name"
 }
 
 data "aws_ami" "tf_ami" {
@@ -116,7 +116,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "tf-remote-state" {
-  bucket = "tf-remote-s3-bucket-clarusways-changehere"
+  bucket = "tf-remote-s3-bucket-examples-changehere"
 
   force_destroy = true # Normally it must be false. Because if we delete s3 mistakenly, we lost all of the states.
 }
@@ -201,7 +201,7 @@ terraform apply
 
 ```go
 resource "aws_s3_bucket" "tf-test-1" {
-  bucket = "clarusway-test-1-versioning"
+  bucket = "example-test-1-versioning"
 }
 ```
 
@@ -213,7 +213,7 @@ terraform apply
 
 ```go
 resource "aws_s3_bucket" "tf-test-2" {
-  bucket = "clarusway-test-2-locking-2"
+  bucket = "example-test-2-locking-2"
 }
 ```
 
@@ -360,3 +360,4 @@ terraform apply
 ```bash
 $ terraform destroy
 ```
+

@@ -79,7 +79,7 @@ resource "aws_subnet" "private_subnet" {
 
 ```go
 variable "environment" {
-  default = "clarusway"
+  default = "example"
 }
 
 variable "vpc_cidr_block" {
@@ -234,7 +234,7 @@ resource "aws_instance" "tf-instances" {
   ami = element(var.tf-ami, count.index )
   instance_type = "t2.micro"
   count = 3
-  key_name = "clarusway"            // change here
+  key_name = "example"            // change here
   security_groups = ["tf-import-sg"]
   tags = {
     Name = element(var.tf-tags, count.index )

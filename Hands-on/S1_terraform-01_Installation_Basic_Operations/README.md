@@ -418,3 +418,4 @@ The `terraform destroy` command terminates resources defined in your Terraform c
 ```bash
 terraform destroy
 ```
+
